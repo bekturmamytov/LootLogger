@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		55F531E729D0E41300967861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F531E629D0E41300967861 /* AppDelegate.swift */; };
 		55F531E929D0E41300967861 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F531E829D0E41300967861 /* SceneDelegate.swift */; };
-		55F531EB29D0E41300967861 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F531EA29D0E41300967861 /* ViewController.swift */; };
 		55F531EE29D0E41300967861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F531EC29D0E41300967861 /* Main.storyboard */; };
 		55F531F029D0E41400967861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F531EF29D0E41400967861 /* Assets.xcassets */; };
 		55F531F329D0E41400967861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F531F129D0E41400967861 /* LaunchScreen.storyboard */; };
 		55F531FE29D0E41400967861 /* LootLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F531FD29D0E41400967861 /* LootLoggerTests.swift */; };
 		55F5320829D0E41400967861 /* LootLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5320729D0E41400967861 /* LootLoggerUITests.swift */; };
 		55F5320A29D0E41400967861 /* LootLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5320929D0E41400967861 /* LootLoggerUITestsLaunchTests.swift */; };
+		55F5321729D0EBDE00967861 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5321629D0EBDE00967861 /* ItemsTableViewController.swift */; };
+		55F5321929D0ECB900967861 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5321829D0ECB900967861 /* Item.swift */; };
+		55F5321E29D0F19000967861 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5321D29D0F19000967861 /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		55F531E329D0E41300967861 /* LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LootLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F531E629D0E41300967861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F531E829D0E41300967861 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55F531EA29D0E41300967861 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55F531ED29D0E41300967861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55F531EF29D0E41400967861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F531F229D0E41400967861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		55F5320329D0E41400967861 /* LootLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LootLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F5320729D0E41400967861 /* LootLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggerUITests.swift; sourceTree = "<group>"; };
 		55F5320929D0E41400967861 /* LootLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55F5321629D0EBDE00967861 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		55F5321829D0ECB900967861 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		55F5321D29D0F19000967861 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,10 @@
 			children = (
 				55F531E629D0E41300967861 /* AppDelegate.swift */,
 				55F531E829D0E41300967861 /* SceneDelegate.swift */,
-				55F531EA29D0E41300967861 /* ViewController.swift */,
-				55F531EC29D0E41300967861 /* Main.storyboard */,
+				55F5321A29D0EDAA00967861 /* Model */,
+				55F5321C29D0EDBD00967861 /* Views */,
+				55F5321B29D0EDB300967861 /* Controllers */,
 				55F531EF29D0E41400967861 /* Assets.xcassets */,
-				55F531F129D0E41400967861 /* LaunchScreen.storyboard */,
 				55F531F429D0E41400967861 /* Info.plist */,
 			);
 			path = LootLogger;
@@ -125,6 +129,32 @@
 				55F5320929D0E41400967861 /* LootLoggerUITestsLaunchTests.swift */,
 			);
 			path = LootLoggerUITests;
+			sourceTree = "<group>";
+		};
+		55F5321A29D0EDAA00967861 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55F5321829D0ECB900967861 /* Item.swift */,
+				55F5321D29D0F19000967861 /* ItemStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55F5321B29D0EDB300967861 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				55F5321629D0EBDE00967861 /* ItemsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		55F5321C29D0EDBD00967861 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55F531EC29D0E41300967861 /* Main.storyboard */,
+				55F531F129D0E41400967861 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F531EB29D0E41300967861 /* ViewController.swift in Sources */,
+				55F5321929D0ECB900967861 /* Item.swift in Sources */,
 				55F531E729D0E41300967861 /* AppDelegate.swift in Sources */,
+				55F5321729D0EBDE00967861 /* ItemsTableViewController.swift in Sources */,
+				55F5321E29D0F19000967861 /* ItemStore.swift in Sources */,
 				55F531E929D0E41300967861 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
